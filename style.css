@@ -91,14 +91,13 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:#fff}
     align-items: center;
     margin-top: 8px;
     gap: 0;
-    overflow-x: auto;        /* 収まらない時は横スクロール */
     white-space: nowrap;
     padding-bottom: 2px;     /* スクロールバーが出る端末で余白を少し */
   }
 
   /* 「｜」で区切る（線ではなく文字で） */
   .nav-links a {
-    padding: 8px 6px;
+    padding: 3px 0px;
     border-left: 0;          /* PC用の区切り線は消す */
     display: inline-flex;
   }
@@ -156,10 +155,10 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:#fff}
   margin-bottom: 0.4em; /* リストの余白を詰める */
 }
 
-/* スマホ表示時は画像を少し大きく */
-@media (max-width: 600px) {
+/* プロフィール画像 スマホ表示時で小さく */
+@media (max-width: 180px) {
   #profile .grid.three img {
-    max-width: 80%;
+    max-width: 20%;
   }
 }
 
